@@ -1,0 +1,28 @@
+manifestVersion: 1
+id: backrest
+name: backrest
+tagline: Backrest is a web UI and orchestrator for restic backup.
+category: Development
+version: "1.0.0"
+port: 9898
+description: >-
+  Backrest is a web-accessible backup solution built on top of restic. Backrest provides a WebUI which wraps the restic CLI and makes it easy to create repos, browse snapshots, and restore files. Additionally, Backrest can run in the background and take an opinionated approach to scheduling snapshots and orchestrating repo health operations.
+
+  By building on restic, Backrest leverages its mature, fast, reliable, and secure backup capabilities while adding an intuitive interface.
+
+  Built with Go, Backrest is distributed as a standalone, lightweight binary with restic as its sole dependency. It can securely create new repositories or manage existing ones. Once storage is configured, the WebUI handles most operations, while still allowing direct access to the powerful restic CLI for advanced operations when needed.
+developer: garethgeorge
+website: https://garethgeorge.github.io/backrest/introduction/getting-started
+submitter: thueske
+submission: https://github.com/hueske-digital/umbrel-apps
+repo: https://github.com/garethgeorge/backrest
+support: https://github.com/hueske-digital/umbrel-apps/issues
+gallery:
+  - https://camo.githubusercontent.com/b466a1eab2c3f69cc7269e87e84441cf717890bd24697998e994583c3a0d6595/68747470733a2f2f663030302e6261636b626c617a6562322e636f6d2f66696c652f6773686172652f73637265656e73686f74732f323032342f53637265656e73686f742b66726f6d2b323032342d30312d30342b31382d31392d35302e706e67
+  - https://camo.githubusercontent.com/76d3e5f8de2b4f05f38421268c546ab74cfa1f030262cccc39a19adbf502bd23/68747470733a2f2f663030302e6261636b626c617a6562322e636f6d2f66696c652f6773686172652f73637265656e73686f74732f323032342f53637265656e73686f742b66726f6d2b323032342d30312d30342b31382d33302d31342e706e67
+releaseNotes: >-
+  See in GitHub-Repository.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
