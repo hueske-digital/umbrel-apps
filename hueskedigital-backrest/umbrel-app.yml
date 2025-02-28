@@ -1,6 +1,7 @@
 manifestVersion: 1
 id: hueskedigital-backrest
 name: backrest
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/restic.png
 tagline: Backrest is a web UI and orchestrator for restic backup.
 category: Development
 version: "1.0.0"
