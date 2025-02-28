@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: backrest
+id: hueskedigital-backrest
 name: backrest
 tagline: Backrest is a web UI and orchestrator for restic backup.
 category: Development
