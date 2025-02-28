@@ -6,7 +6,40 @@ services:
     environment:
       APP_HOST: hueskedigital-backrest_app_1
       APP_PORT: 9898
-    
+
+  ssh-key-generator:
+    image: ghcr.io/hueske-digital/sshkey-generator:latest
+    environment:
+      - SSH_HOST
+      - SSH_HOSTNAME
+      - SSH_USER
+      - SSH_PORT
+    volumes:
+      - ssh_data:/root/.ssh
+
   app:
     image: garethgeorge/backrest:latest-alpine
-    init: true
+    restart: on-failure
+    stop_grace_period: 1m
+    environment:
+      - TZ=Europe/Berlin
+      - BACKREST_DATA=/data
+      - BACKREST_CONFIG=/config/config.json
+      - XDG_CACHE_HOME=/cache
+      - TMPDIR=/tmp
+    volumes:
+      - app_data:/data
+      - app_config:/config
+      - app_cache:/cache
+      - app_tmp:/tmp
+      - ssh_data:/root/.ssh
+      - /var/lib/docker/volumes:/mnt/volumes:ro
+      - $HOME:/mnt/home:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+
+volumes:
+  app_data:
+  app_config:
+  app_cache:
+  app_tmp:
+  ssh_data:
