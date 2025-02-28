@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: hueskedigital-backrest
+id: backrest
 name: Backups
 icon: https://raw.githubusercontent.com/hueske-digital/umbrel-apps/master/hueskedigital-backrest/logo.svg
 tagline: Backrest is a web UI and orchestrator for restic backup.
